@@ -22,8 +22,8 @@ var polygon = L.polygon([
 ]).addTo(map);
 
 marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
-circle.bindPopup("I am a circle.");
-polygon.bindPopup("I am a polygon.");
+circle.bindPopup("I am a circle.").openPopup;
+polygon.bindPopup("I am a polygon.").openPopup;
 
 var popup = L.popup();
 
