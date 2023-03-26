@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="map.js" defer></script>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+     
+    <title>Leaflet</title>
+    <style>
+        #map {
+            height: 500px;
+            background-color: #ccc;
+        }
+
+    label, select {
+        position: relative;
+    }
+
+
+    </style>
+    </head>
+<body>
+    
+    <label for="Business">Select a Business:</label>
+<select id="business" name="business">
+  <option value="Coffee"> Coffee </option>  
+  <option value="Restaurant">Restaurant</option>
+  <option value="Hotel">Hotel</option>
+  <option value="Market">Market</option>
+</select>
+<div id="map"></div>
+<div id="mapid"></div>
+
+</body>
+</html>
+
+<!-- Note: You do NOT need to create an external JS file for this project despite any instructions you may see in Canvas. The file app.js that's included in the starter code is the only external JS file you need. -->
