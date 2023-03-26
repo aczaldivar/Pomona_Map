@@ -5,10 +5,10 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-var marker = L.marker([34.0568,-117.7504 ]).addTo(map);
+var marker = L.marker([34.05,-117.74 ]).addTo(map);
 
 
-var circle = L.circle([34.11,-117.509], {
+var circle = L.circle([34.05,-117.73], {
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5,
