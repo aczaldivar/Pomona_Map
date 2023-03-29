@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomona Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
      crossorigin=""/>
@@ -14,16 +15,21 @@
      
     <title>Leaflet</title>
     <style>
-        #map {
-            height: 500px;
-            background-color: #ccc;
-        }
-
-    label, select {
-        position: relative;
+         #map { 
+        height: 400px;
+        background-color: #ccc;
     }
-
-
+    #map::before{
+        content: 'LOADING';
+        font-size: 3em;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        margin-top: 3em;
+    }
+    .leaflet-popup-content-wrapper {
+        width: 100%;
+    }
     </style>
     </head>
 <body>
@@ -37,7 +43,7 @@
 </select>
 <button id="submit">Submit</button>
 <div id="map"></div>
-<div id="mapid"></div>
+
 
 </body>
 </html>
