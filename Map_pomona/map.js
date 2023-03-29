@@ -9,7 +9,7 @@ const myMap = {
 	buildMap() {
 		this.map = L.map('map', {
 		center: this.coordinates,
-		zoom: 11,
+		zoom: 15,
 		});
 		// add openstreetmap tiles
 		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -34,10 +34,12 @@ const myMap = {
 		])
 			.bindPopup(`<p1>${this.businesses[i].name}</p1>`)
 			.addTo(this.map)
+			.bindPopup('<p1><b>These are your choices</b><br></p1>')
+			.openPopup()
 		}
 	},
 }
-
+//var marker = L.marker([`${lat}`, `${long}`]).addTo(map);
 
 
 // get coordinates via geolocation api
